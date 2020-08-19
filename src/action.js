@@ -6,7 +6,7 @@ REQUEST_ROBOTS_PENDING,REQUEST_ROBOTS_SUCCESS, REQUEST_ROBOTS_FAILED } from './c
 	})
 export const requestRobots=()=>(dispatch)=>{
 	dispatch({type: REQUEST_ROBOTS_PENDING});
-	fetch( `http://jsonplaceholder.typicode.com/users`)
+	fetch(`https://jsonplaceholder.typicode.com/users`)
 	.then((response)=> {
     return response.json();
   })
